@@ -8,5 +8,8 @@
     "path": "~0.4.9",
     "gulp-rename": "~1.2.0",
     "gulp-uglify": "~0.3.1"
+  },
+  "dependencies": {
+    "gulp-install": "^0.2.0"
   }
 }
