@@ -1002,7 +1002,7 @@ display: inline;
                 {% endif %}
 
             {% elif is_post %}
-
+<div class="span6 offset1">
                 <div class="post">
                     <h1>{{ post.title }}</h1>
                     <p class="muted">Posted on {{ post.created_at|format_date }}</p>
@@ -1059,6 +1059,7 @@ display: inline;
   		<li><a href="/tag/{{ tag.name }}">{{ tag.name }}</a></li>
 		{% endfor %}
 		</ul>
+		</div>
 	</div>
 {% endif %}
 <!-- tag cloud-->
