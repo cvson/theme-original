@@ -804,7 +804,7 @@ display: inline;
                 {% for photo in post.photos %}
                   {% if loop.index == 1 %}
                   <!--h3>Latest post: </h3-->
-                  <h3><a href="{{ post.permalink }}"> Latest: {{ post.title }}</a></h3>
+                  <h3><a href="{{ post.permalink }}"> {{ post.title }}</a></h3>
                   <div class="post-image">
                  {% if post.type == 'link' %}
                  <a href="{{ post.url }}" target="_blank">
@@ -827,7 +827,7 @@ display: inline;
                 <hr />
                 </div>
                 <div class="span5 offset0" >
-                <h3>Highlights</h3>
+                <h3>Tin tức khác:</h3>
                 <hr \>
                 <ul list-style-type: none; list-style-image: url("https://dl.dropboxusercontent.com/u/47250375/vilib-icon/latest-news.gif");>
                 {% for post in posts %}
