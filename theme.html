@@ -67,27 +67,21 @@
     <link href="{{ static('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ static('bootstrap/css/bootstrap-responsive.min.css') }}" rel="stylesheet">
     <link href="{{ static('themes/default/default.css') }}" rel="stylesheet">
-    <!--link href="{{ static('site/css/postachio.css?v=062014') }}" rel="stylesheet"-->
     <link href="{{ static('mediaelement/mediaelementplayer.css') }}" rel="stylesheet" />
     <link href="https://dl.dropboxusercontent.com/u/47250375/vilib-icon/favicon.ico" rel="shortcut icon" />
 
-    <!--[if IE 7]>
-    <link href="{{ static('fontawesome/css/font-awesome-ie7.min.css') }}" rel="stylesheet">
-    <![endif]-->
-    <!--[if lt IE 9]>
-    <script src="{{ static('bootstrap/js/html5shiv.js') }}"></script>
-    <![endif]-->
+   
     <style>
 
     body{
         <!--background-color: #F1F1D4;-->
     }
     a {
-  color: #30C16F;
-}
-a:visited {
-  color: #30C16F;
-}
+  	color: #30C16F;
+	}
+	a:visited {
+ 	 color: #30C16F;
+	}
 
     a.brand,
     a.brand:link,
@@ -104,7 +98,7 @@ a:visited {
     a.brand:visited:hover {
      color: #FE9A2E;
     }
-        .nav li a,
+    .nav li a,
     .nav li a:link,
     .nav li a:visited,
     .nav li.active a:link {
@@ -121,13 +115,11 @@ a:visited {
         padding-top: 30px;
         padding-bottom: 15px;
         color: #FE9A2E;
-        background: white;
-        <!--background-image: url(https://dl.dropboxusercontent.com/u/47250375/vilib-icon/web-header-1.png);-->
-      
+        background: white;      
     }
     footer {
-  background-color: #EFFBF8;
-}
+  	background-color: #EFFBF8;
+	}
 
     code{
         color:#006633;
@@ -150,74 +142,75 @@ a:visited {
     h4{
         color:#30C16F;
     }
-        .column-body {
-            padding: 20px 30px;
-            padding: 1.25rem 1.875rem;
-        }
-        .blog-container {
-            padding-top: 140px;
-        }
+    .column-body {
+        padding: 20px 30px;
+        padding: 1.25rem 1.875rem;
+    }
+    .blog-container {
+        padding-top: 140px;
+    }
+    div.site-container {
+        width: 960px;
+        width: 60rem;
+    }
+    div.post {
+        padding: 20px;
+    }
+    div.post p img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #e5e5e5;
+    }
+    div.pagination {
+        a.post-next { display: inline-block; float: right; }
+        a.post-prev { display: inline-block; float: left; }
+    }
+    @media only screen and (max-width: 959px) {
         div.site-container {
-            width: 960px;
-            width: 60rem;
+        width: auto;
         }
-        div.post {
-            padding: 20px;
-        }
-        div.post p img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #e5e5e5;
-        }
-        div.pagination {
-            a.post-next { display: inline-block; float: right; }
-            a.post-prev { display: inline-block; float: left; }
-        }
-        @media only screen and (max-width: 959px) {
-            div.site-container {
-                width: auto;
-            }
-        }
-        @media only screen and (max-width: 767px) {
-            .padleft {
-                padding-right: 0;
-            } 
-        }
+    }
+    @media only screen and (max-width: 767px) {
+        .padleft {
+            padding-right: 0;
+        } 
+    }
+    
     <!--This is for tag cloud-->
     </style>
     <style type="text/css" href="http://www.tagcloudgenerator.com/sites/tagcloudgenerator.com/modules/custom/webgen/css/tagcloud.css?n4yulw">
-    .tagcloud { font-weight: bolder; line-height: 1.4em; }
-    .tagcloud li { display: inline; white-space: nowrap; padding: 0; margin: 0; }
-    .tagcloud li a { padding: 0 0.2em 0 0.2em; text-decoration: none; }
+    	.tagcloud { font-weight: bolder; line-height: 1.4em; }
+    	.tagcloud li { display: inline; white-space: nowrap; padding: 0; margin: 0; }
+    	.tagcloud li a { padding: 0 0.2em 0 0.2em; text-decoration: none; }
     </style>
   
     <!-- Styling for tag cloud -->
-<style>
-  .tag-cloud {
-    width: 90%;
-    max-width: 1280px;
-    margin: 5em auto 1em;
-    text-align: center;
-  }
+	<style>
+  	.tag-cloud {
+		width: 90%;
+		max-width: 1280px;
+    	margin: 5em auto 1em;
+    	text-align: center;
+  	}
     
-  .tag-cloud h4 {
-    font-weight: bold;
-    padding-bottom: 2em;
-  }
+  	.tag-cloud h4 {
+   		font-weight: bold;
+    	padding-bottom: 2em;
+  	}
     
-  .tag-cloud ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+  	.tag-cloud ul {
+    	margin: 0;
+    	padding: 0;
+    	list-style: none;
+  	}
     
-  .tag-cloud li {
-    display: inline-block;
-    margin: 5px;
-  }
+  	.tag-cloud li {
+   		 display: inline-block;
+   		 margin: 5px;
+ 	 }
     
-  .tag-cloud a,
-  .tag-cloud a:visited {
+  	.tag-cloud a,
+  	.tag-cloud a:visited {
     transition-property: all;
     -webkit-transition-property: all;
     transition-duration: 0.2s;
@@ -238,13 +231,13 @@ a:visited {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     font-size: 0.9rem;
-  }
+  	}
     
-  .tag-cloud a:hover,
-  .tag-cloud a:focus {
-    background-color: rgb(245, 197, 40);
-  }
-</style>
+  	.tag-cloud a:hover,
+  	.tag-cloud a:focus {
+    	background-color: rgb(245, 197, 40);
+  	}
+	</style>
 
   
     <style>
@@ -273,7 +266,7 @@ a:visited {
   .categories a:active {
     background: #b33a22;
   }
-</style>
+	</style>
 <!--Insert for menu header-->
 <style>
 .discover-logo {
