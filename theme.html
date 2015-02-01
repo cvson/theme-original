@@ -560,6 +560,9 @@ height: 250px;
 width: 280px;
 } 
 }*/
+ul.newpost {
+	list-style-image: url('https://dl.dropboxusercontent.com/u/47250375/web/bullet_style.gif');
+}
 
 </style>
 <!--for share-button-->
@@ -821,7 +824,7 @@ display: inline;
                 <div class="span5 offset0" >
                 <h3>Tin tức khác:</h3>
                 <hr \>
-                <ul list-style-image: url('https://dl.dropboxusercontent.com/u/47250375/web/bullet_style.gif');>
+                <ul class="newpost">
                 {% for post in posts %}
     				<li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
    				 {% endfor %}
