@@ -812,15 +812,16 @@ display: inline;
                 <img src="http://placehold.it/400x300/0eafff/ffffff.png" alt="" align="middle" />
                 {% endif %}
                  </a>
-                  </div>
-                {{ post.content }}
-                {% if post.tags %}
+                 {% if post.tags %}
                     <ul class="tags">
                         {% for tag in post.tags %}
                             <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
                         {% endfor %}
                     </ul>
                     {% endif %}
+                  </div>
+                {{ post.content }}
+                
                   {% endif %}
                 {% endfor %}
                 {% endif %}
