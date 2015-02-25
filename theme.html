@@ -869,7 +869,7 @@ display: inline;
                 {% for post in posts %}
                 {% if (loop.index > 1) %}
                 {% if (loop.index % 3) == 1 %}  
-                <div class="span3 offset0">                     
+                <div class="span2 offset0">                     
                 {% if post.photos %}
                    {% for photo in post.photos %}
                   {% if loop.index == 1 %}
@@ -897,8 +897,9 @@ display: inline;
                   {% endif %}
                    {% endfor %}
                     {% endif %}
+                    </div>
                      {% endif %}
-                     </div>
+                     
                      {% endif %}
                      
                     {% endfor %}
