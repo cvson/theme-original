@@ -826,7 +826,7 @@ display: inline;
                 <hr \>
                 <ul class="newpost">
                 {% for post in posts %}
-    				<li><a href="{{ post.permalink }}">{{ post.title|truncate(20) }}</a></li>
+    				<li><a href="{{ post.permalink }}">{{ post.title|truncate(30) }}</a></li>
    				 {% endfor %}
    				 </ul>
                 </div>
@@ -843,7 +843,7 @@ display: inline;
                 {% if post.photos %}
                    {% for photo in post.photos %}
                   {% if loop.index == 1 %}
-                  <h4><a href="{{ post.permalink }}">{{ post.title|truncate(20) }}</a></h4>
+                  <h4><a href="{{ post.permalink }}">{{ post.title|truncate(30) }}</a></h4>
                   <div class="post-image">
                  {% if post.type == 'link' %}
                  <a href="{{ post.url }}" target="_blank">
@@ -903,7 +903,7 @@ display: inline;
                     </ul-->
                     {% endif %}
                   </div>
-                  <h5><a href="{{ post.permalink }}">{{ post.title|truncate(20) }}</a></h5>
+                  <h5><a href="{{ post.permalink }}">{{ post.title|truncate(30) }}</a></h5>
                    <!--{{ post.content }}-->
                    
                   {% endif %}
@@ -945,7 +945,7 @@ display: inline;
                     </ul-->
                     {% endif %}
                   </div>
-                  <h5><a href="{{ post.permalink }}">{{ post.title|truncate(20) }}</a></h5>
+                  <h5><a href="{{ post.permalink }}">{{ post.title|truncate(30) }}</a></h5>
                    <!--{{ post.content }}-->
                    
                   {% endif %}
@@ -986,7 +986,7 @@ display: inline;
                     </ul-->
                     {% endif %}
                   </div>
-                  <h5><a href="{{ post.permalink }}">{{ post.title|truncate(20) }}</a></h5>
+                  <h5><a href="{{ post.permalink }}">{{ post.title|truncate(30) }}</a></h5>
                    <!--{{ post.content }}-->
                    
                   {% endif %}
