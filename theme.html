@@ -143,10 +143,23 @@
         color:#30C16F;
     }
     hr { background-color: #008080; height: 1px; border: 0; }
+    .group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
     section {
   	float: left;
   	margin: 0 1.5%;
   	width: 30%;
+  	position: relative;
 	}
 	aside {
     float: right;
