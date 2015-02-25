@@ -865,7 +865,7 @@ display: inline;
  				
  				<section>
  				<hr />
- 				<h3>Khoa học</h3>
+ 				&nbsp;&nbsp;&nbsp;&nbsp; <h3>Khoa học</h3>
                 {% for post in posts %}
                 {% if (loop.index > 1) %}
                 {% if (loop.index % 3) == 1 %}  
@@ -892,7 +892,7 @@ display: inline;
                     </ul-->
                     {% endif %}
                   </div>
-                   {{ post.content }}
+                   <!--{{ post.content }}-->
                    
                   {% endif %}
                    {% endfor %}
@@ -906,7 +906,7 @@ display: inline;
                     </section>
                     <section>
  				<hr />
- 				<h3>Công nghệ</h3>
+ 				&nbsp;&nbsp;&nbsp;&nbsp; <h3>Công nghệ</h3>
                 {% for post in posts %}
                 {% if (loop.index > 1) %}
                 {% if (loop.index % 3) == 2 %}  
@@ -933,7 +933,7 @@ display: inline;
                     </ul-->
                     {% endif %}
                   </div>
-                   {{ post.content }}
+                   <!--{{ post.content }}-->
                    
                   {% endif %}
                    {% endfor %}
