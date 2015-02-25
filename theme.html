@@ -156,14 +156,14 @@
   *zoom: 1;
 }
     section {
+    display: inline-block;
   	float: left;
-  	margin: 0 1.5%;
+  	margin: 0.5% 1.5%;
   	width: 73%;
-  	display: inline-block;
 	}
 	aside {
     float: right;
-    margin: 0 1.5%;
+    margin: 0.5% 1.5%;
     width: 20%;
 	}
 	div {
@@ -879,7 +879,7 @@ display: inline;
  				<hr />
                 {% for post in posts %}
                 <div class="span4 offset0">
-                {% if (loop.index > 1) %}
+                {% if (loop.index > 2) %}
                 {% if (loop.index % 3) == 1 %}                       
                 {% if post.photos %}
                    {% for photo in post.photos %}
