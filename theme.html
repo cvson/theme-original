@@ -144,7 +144,6 @@
     }
     hr { background-color: #008080; height: 1px; border: 0; }
     section {
-    display: inline-block;
   	float: left;
   	margin: 0 1.5%;
   	width: 73%;
@@ -824,7 +823,7 @@ display: inline;
                 <!--end latest post -->
                 <!--test section-->
                 <aside>
-                <div class="span4 offset0">
+                <div class="span3 offset0">
   				{% for post in posts %}
                 {% if (loop.index % 3) == 0 %}                       
                 {% if post.photos %}
