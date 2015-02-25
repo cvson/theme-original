@@ -868,8 +868,8 @@ display: inline;
  				<h3>Khoa hoc</h3>
                 {% for post in posts %}
                 {% if (loop.index > 1) %}
-                <div class="span3 offset0">
-                {% if (loop.index % 3) == 1 %}                       
+                {% if (loop.index % 3) == 1 %}  
+                <div class="span3 offset0">                     
                 {% if post.photos %}
                    {% for photo in post.photos %}
                   {% if loop.index == 1 %}
