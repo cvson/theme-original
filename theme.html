@@ -142,6 +142,7 @@
     h4{
         color:#30C16F;
     }
+    hr { background-color: #008080; height: 1px; border: 0; }
     .column-body {
         padding: 20px 30px;
         padding: 1.25rem 1.875rem;
@@ -754,7 +755,7 @@ display: inline;
                             </a>
                         </li>
                         </ul>
-                    <hr background-color="#008080" />
+                    <hr />
                 </div>
                 <!--latest post -->
                 {% if is_home %}
@@ -794,7 +795,7 @@ display: inline;
                 {% endif %}
                 {% endif %}
                 {% endfor %}
-                <hr background-color="#008080" />
+                <hr />
                 </div>
                 <div class="span5 offset0" >
                 <h3>Tin tức khác:</h3>
@@ -838,7 +839,7 @@ display: inline;
                     {% endif %}
                   </div>
                   {{ post.content }}
-                  <hr background-color="#008080" />
+                  <hr />
                   {% endif %}
                    {% endfor %}
                     {% endif %}
@@ -875,7 +876,7 @@ display: inline;
                     {% endif %}
                   </div>
                    {{ post.content }}
-                   <hr background-color="#008080" />
+                   <hr />
                   {% endif %}
                    {% endfor %}
                     {% endif %}
@@ -932,8 +933,8 @@ display: inline;
                     
  					<!-- tag cloud-->
                  {% if is_home %}
-                    <hr background-color="#008080" />
-                    <hr background-color="#008080" />
+                    <hr />
+                    <hr />
                     {% if site.tags %}
 					<div class="tag-cloud">
 					<h3>Tag Cloud</h3>
@@ -978,7 +979,7 @@ display: inline;
 
                     </div>
                 </div>
-                <hr background-color="#008080" />
+                <hr />
                 {% endfor %}
            
                 {% if not is_tag %}
@@ -1030,7 +1031,7 @@ display: inline;
 <ul class="inline pull-right">
     <li><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fvisionlib.postach.io{{ post.permalink }}&amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp" style="overflow:hidden;width:100%;height:40px;" scrolling="no" frameborder="0" allowTransparency="true"></iframe><style>.fbook{position: absolute; font-color:#ddd; top:-1668px; font-size:10;}</style></style><a href="http://www.addlikebutton.net" class="fbook">addlikebutton.net</a><style>.fbook-style_map:initreaction=10false_attempt10-border</style><style>closemap"init"if=fb_connect-start="25"check_bandwith</style></li>
 </ul>
-                    <hr background-color="#008080" />
+                    <hr />
                     {{ post.content }}
                     {% if post.tags %}
                     <ul class="tags">
@@ -1039,8 +1040,8 @@ display: inline;
                         {% endfor %}
                     </ul>
                     <!-- tag cloud-->
-                    <hr background-color="#008080" />
-                    <hr background-color="#008080" />
+                    <hr />
+                    <hr />
                     {% if site.tags %}
 	<div class="tag-cloud">
 		<h3>Tag Cloud</h3>
@@ -1096,7 +1097,7 @@ display: inline;
                 </div>
 
                 {% if site.disqus %}
-                <hr background-color="#008080" />
+                <hr />
 
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
@@ -1152,7 +1153,7 @@ display: inline;
 <ul class="inline pull-right">
     <li><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fvisionlib.postach.io{{ post.permalink }}&amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp" style="overflow:hidden;width:100%;height:40px;" scrolling="no" frameborder="0" allowTransparency="true"></iframe><style>.fbook{position: absolute; font-color:#ddd; top:-1668px; font-size:10;}</style></style><a href="http://www.addlikebutton.net" class="fbook">addlikebutton.net</a><style>.fbook-style_map:initreaction=10false_attempt10-border</style><style>closemap"init"if=fb_connect-start="25"check_bandwith</style></li>
 </ul>
-                    <hr background-color="#008080" />
+                    <hr />
                     {{ link.content }}
                     {% if link.tags %}
                     <ul class="tags">
@@ -1165,7 +1166,7 @@ display: inline;
                 </div>
 
                 {% if site.disqus %}
-                <hr background-color="#008080" />
+                <hr />
 
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
@@ -1187,7 +1188,7 @@ display: inline;
 
                 <div class="post">
                     <h1>{{ page.title }}</h1>
-                    <hr background-color="#008080" />
+                    <hr />
                     {{ page.content }}
                 </div>
 
