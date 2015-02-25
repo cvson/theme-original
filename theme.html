@@ -835,6 +835,7 @@ display: inline;
                 {% endif %}
                 <!--end latest post -->
                 <!--test section-->
+                {% if is_home %}
                 <aside>
                 <div class="span3 offset0">
   				{% for post in posts %}
@@ -999,7 +1000,7 @@ display: inline;
                     {% endfor %}
                     </section>
                 <!--end section-->
-                
+                {% endif %}
                 <div class="inline pull-right">
                 <div class="span4 offset0">
                 {% for post in posts %}
