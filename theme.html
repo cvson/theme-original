@@ -74,7 +74,6 @@
     <style>
 
     body{
-        <!--background-color: #F1F1D4;-->
     }
     a {
   	color: #008080;
@@ -143,18 +142,7 @@
         color:#30C16F;
     }
     hr { background-color: #008080; height: 1px; border: 0; }
-    .group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
+
     section {
     display: inline-block;
   	float: left;
@@ -878,8 +866,8 @@ display: inline;
  				<section>
  				<hr />
                 {% for post in posts %}
+                {% if (loop.index > 1) %}
                 <div class="span4 offset0">
-                {% if (loop.index > 2) %}
                 {% if (loop.index % 3) == 1 %}                       
                 {% if post.photos %}
                    {% for photo in post.photos %}
@@ -911,8 +899,8 @@ display: inline;
                      {% endif %}
                      {% endif %}
                      </div>
+                     <hr />
                     {% endfor %}
-                    <hr />
                     </section>
                 <!--end section-->
                 
