@@ -156,12 +156,12 @@
     section {
     display: inline-block;
   	float: left;
-  	margin: 0 1.%;
+  	margin: 0 1.5%;
   	width: 73%;
 	}
 	aside {
     float: right;
-    margin: 0 1.%;
+    margin: 0 1.5%;
     width: 20%;
 	}
 	div {
@@ -826,7 +826,7 @@ display: inline;
                 <hr \>
                 <ul class="newpost">
                 {% for post in posts %}
-    				<li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+    				<li><a href="{{ post.permalink }}">{{ post.title|truncate(50) }}</a></li>
    				 {% endfor %}
    				 </ul>
                 </div>
