@@ -141,6 +141,16 @@
     h4{
         color:#30C16F;
     }
+    h5 { 
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:#008080;
+    }
     hr { background-color: #008080; height: 1px; border: 0; }
 
     section {
@@ -832,7 +842,7 @@ display: inline;
                 {% if post.photos %}
                    {% for photo in post.photos %}
                   {% if loop.index == 1 %}
-                  <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
+                  <h5><a href="{{ post.permalink }}">{{ post.title }}</a></h5>
                   <div class="post-image">
                  {% if post.type == 'link' %}
                  <a href="{{ post.url }}" target="_blank">
@@ -873,7 +883,7 @@ display: inline;
                 {% if post.photos %}
                    {% for photo in post.photos %}
                   {% if loop.index == 1 %}
-                  <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
+                  <h5><a href="{{ post.permalink }}">{{ post.title }}</a></h5>
                   <div class="post-image">
                  {% if post.type == 'link' %}
                  <a href="{{ post.url }}" target="_blank">
