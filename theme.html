@@ -812,9 +812,8 @@ display: inline;
                 {% endif %}
                 <!--end latest post -->
                 <!--test section-->
-                <div class="inline pull-right">
                 <section>
-                <div class="span4 offset0">
+                <!--div class="span4 offset0"-->
   				{% for post in posts %}
                 {% if (loop.index % 3) == 0 %}                       
                 {% if post.photos %}
@@ -848,9 +847,8 @@ display: inline;
                     {% endif %}
                      {% endif %}
                     {% endfor %}
-                    </div>
+                    <!--/div-->
  				</section>
- 				</div>
                 <!--end section-->
                 
                 <div class="inline pull-right">
