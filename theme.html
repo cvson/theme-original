@@ -1186,7 +1186,7 @@ display: inline;
             {% elif is_post %}
             <aside>
                 <div class="span3 offset0">
-  				{% for post in posts %}
+  				{% for post in recent_posts %}
                 {% if (loop.index % 3) == 0 %}                       
                 {% if post.photos %}
                    {% for photo in post.photos %}
