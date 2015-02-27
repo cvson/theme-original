@@ -1010,7 +1010,7 @@ display: inline;
                     </section>
                 <!--end section-->
                 {% endif %}
-                <div class="inline pull-right">
+                <!--div class="inline pull-right">
                 <div class="span4 offset0">
                 {% for post in posts %}
                 {% if (loop.index % 3) == 0 %}                       
@@ -1119,6 +1119,9 @@ display: inline;
 {% endif %}
  {% endif %}
 {% endfor %}
+                    
+                    </div>
+                    </div-->
                     {% if not is_tag %}
                 <div class="pagination">
                     {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
@@ -1126,8 +1129,6 @@ display: inline;
                 </div>
 
                 {% endif %}
-                    </div>
-                    </div>
                    
            {% endif %}
                     
