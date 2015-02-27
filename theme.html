@@ -820,11 +820,9 @@ display: inline;
                 {% endif %}
                 {% endif %}
                 {% endfor %}
-                <hr />
                 </div>
                 <div class="span3 offset0" >
                 <h3>Tin tức khác:</h3>
-                <hr \>
                 <ul class="newpost">
                 {% for post in posts %}
     				<li><a href="{{ post.permalink }}">{{ post.title|truncate(40) }}</a></li>
@@ -835,8 +833,9 @@ display: inline;
                 </div>
                 <div class="span3 offset0" >
                 <h3>Quick links:</h3>
-                <hr \>
-                NEED YOUR HELP!
+                <p>Chúng tôi muốn xây dựng một trang thông tin khoa học, kĩ thuật, công nghệ... để
+                có thể truyền cảm hứng cho các bạn trẻ ở Việt Nam. Chúng tôi cần các bạn giúp để
+                có thể làm được việc này. </p>
                  </div>
                 <!--/div-->
                 </div>
